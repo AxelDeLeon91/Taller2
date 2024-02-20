@@ -4,12 +4,14 @@ public class Asignatura {
      private String codigo;
      private String nombre;
      private String descripcion;
+     private static int contador;
      
    public Asignatura ()
    {
 	   codigo= null;
 	   nombre= null;
 	   descripcion= null;
+	   contador++;
    }
    
    public Asignatura (String c, String n, String d)
@@ -17,6 +19,7 @@ public class Asignatura {
 	   codigo=c;
 	   nombre=n;
 	   descripcion=d;
+	   contador++;
    }
    
    public String getCodigo ()
@@ -32,6 +35,11 @@ public class Asignatura {
    public String getDescripcion ()
    {
 	   return descripcion;
+   }
+   
+   public static int cantInstancias ()
+   {
+	   return contador;
    }
    
   

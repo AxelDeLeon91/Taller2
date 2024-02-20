@@ -17,7 +17,7 @@ public class Alumno {
 	   domicilio= null;
 	   telefono= 0;
 	   asignaprobadas= 0;
-	   cursadas= new Asigncursadas();
+	   cursadas= new AsignCursadas();
    }
    
    public Alumno (int c, String n, String a, String d, int t)
@@ -28,7 +28,7 @@ public class Alumno {
 	   domicilio= d;
 	   telefono= t;
 	   asignaprobadas= 0;
-	   cursadas= new Asigncursadas();
+	   cursadas= new AsignCursadas();
    }
    
    public int getCedula ()
@@ -61,7 +61,7 @@ public class Alumno {
 	   return asignaprobadas;
    }
    
-   public Asigncursadas getAsignCursadas ()
+   public AsignCursadas getAsignCursadas ()
    {
 	   return cursadas;
    }
